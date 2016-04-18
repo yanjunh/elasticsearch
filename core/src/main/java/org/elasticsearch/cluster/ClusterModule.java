@@ -280,6 +280,7 @@ public class ClusterModule extends AbstractModule {
         registerIndexDynamicSetting(UnassignedInfo.INDEX_DELAYED_NODE_LEFT_TIMEOUT_SETTING, Validator.TIME);
         registerIndexDynamicSetting(DefaultSearchContext.MAX_RESULT_WINDOW, Validator.POSITIVE_INTEGER);
         registerIndexDynamicSetting(MapperService.INDEX_MAPPING_NESTED_FIELDS_LIMIT_SETTING, Validator.NON_NEGATIVE_INTEGER);
+        registerIndexDynamicSetting(MapperService.INDEX_MAPPING_TOTAL_FIELDS_LIMIT_SETTING, Validator.NON_NEGATIVE_INTEGER);
     }
 
     public void registerIndexDynamicSetting(String setting, Validator validator) {
